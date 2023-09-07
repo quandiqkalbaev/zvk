@@ -1,0 +1,78 @@
+.intro {
+  margin-top: 30px;
+  padding-bottom: 43px;
+  &__inner {
+    width: 100%;
+  }
+
+  @for $i from 1 to 11 {
+    &__item-#{$i} {
+      grid-area: n#{$i};
+      background: url("../../images/intro/img-#{$i}.png"), #fff;
+      background-repeat: no-repeat;
+    }
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 332px);
+    grid-template-rows: repeat(4, 154px);
+    gap: 30px;
+    grid-template-areas:
+      "n1 n2 n2 n3"
+      "n1 n2 n2 n4"
+      "n1 n5 n6 n7"
+      "n8 n8 n9 n10";
+  }
+  &__item {
+    border: 1px solid black;
+    &:nth-child(1),
+    &:nth-child(2) {
+      p {
+        font-size: 30px;
+      }
+    }
+    &:nth-child(3) {
+      background-position: 120px 20px;
+      p {
+        max-width: 192px;
+      }
+    }
+    &:nth-child(4) {
+      background-position: 180px 0px;
+      p {
+        margin-top: 60px;
+        max-width: 192px;
+      }
+    }
+    &:nth-child(5) {
+      background-position: 15px 0px;
+      p {
+        max-width: 192px;
+      }
+    }
+    &:nth-child(6) {
+      background-position: 180px 0px;
+      p {
+        max-width: 192px;
+      }
+    }
+    &:nth-child(7) {
+      p {
+        max-width: 192px;
+      }
+    }
+    &:nth-child(9) {
+        background-position: 150px 0px;
+        p {
+          max-width: 192px;
+        }
+      }
+  }
+  &__text {
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}
