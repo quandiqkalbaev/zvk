@@ -1,0 +1,13 @@
+.banner {
+  padding-top: 68px;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  &__item {
+    overflow: hidden;
+    border-radius: 5px;
+  }
+}

@@ -21,12 +21,20 @@ body {
 }
 
 .container {
-  max-width: 1440px;
-  padding: 0 10px;
+  max-width: 1460px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
 @import "./blocks/header";
 @import "./blocks/intro";
 @import "./blocks/service";
-@import "./blocks/product";
+@import "./blocks/hits";
+@import "./blocks/new";
+@import "./blocks/disposal";
+@import "./blocks/article";
+@import "./blocks/last";
+@import "./blocks/banner";
+@import "./blocks/news";
+@import "./blocks/sale";
+@import "./blocks/footer";

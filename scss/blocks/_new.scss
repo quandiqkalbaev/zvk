@@ -1,0 +1,28 @@
+.new {
+  padding-top: 70px;
+  background-color: $white;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &-name {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 30px; /* 93.75% */
+    }
+    &-showall {
+      color: #38a7df;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+    }
+    &-icon {
+      margin-left: 8px;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 .intro {
-  margin-top: 30px;
-  padding-bottom: 43px;
+  padding-top: 30px;
+  padding-bottom: 42px;
+  background-color: #F7F8F9;
   &__inner {
     width: 100%;
   }
@@ -24,7 +25,8 @@
       "n8 n8 n9 n10";
   }
   &__item {
-    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 4px 20px 0px rgba(166, 178, 181, 0.25);
     &:nth-child(1),
     &:nth-child(2) {
       p {

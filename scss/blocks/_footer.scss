@@ -1,0 +1,143 @@
+.footer {
+  margin-top: 116px;
+  padding-top: 63.5px;
+  background: $dark;
+  color: #fff;
+
+  //footer top styles
+
+  &__top-wrapper {
+    display: flex;
+  }
+
+  &__logo {
+    margin-left: 35px;
+  }
+  &__feedback {
+    margin-left: 76.5px;
+    max-width: 310px;
+    &-connect {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  &__tel {
+    color: #feffff;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 24px; /* 92.308% */
+  }
+
+  &__social-wapp {
+    margin-left: 10px;
+  }
+
+  &__social-tg {
+    margin-left: 4px;
+  }
+
+  &__worktime {
+    color: $grey;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__feedback-btn {
+    width: 100%;
+    height: 43.642px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #00a7df;
+    background: rgba(0, 167, 223, 0);
+    color: #00a7df;
+    font-size: 16px;
+  }
+
+  &__address {
+    margin-top: 15px;
+    color: #feffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+  }
+
+  &__mail {
+    margin-top: 15px;
+    color: #00a7df;
+    font-size: 18px;
+    line-height: 140%; /* 25.2px */
+  }
+
+  &__about {
+    margin-left: 280px;
+  }
+
+  &__order {
+    margin-left: 70px;
+  }
+
+  &__client {
+    margin-left: 40px;
+  }
+
+  .footer__items {
+    display: flex;
+    flex-direction: column;
+    &-title {
+      color: #feffff;
+      font-weight: 700;
+      line-height: 130%; /* 26px */
+    }
+  }
+
+  &__item {
+    color: #feffff;
+    font-size: 16px;
+    line-height: 140%; /* 22.4px */
+    margin-top: 20px;
+  }
+
+  //footer bot styles
+
+  &__bot {
+    margin-top: 39px;
+    background: #323131;
+    padding: 28px 35px;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__rights {
+    color: $grey;
+    font-size: 13px;
+    line-height: 140%; /* 18.2px */
+  }
+  .bot-socials {
+    display: flex;
+    align-items: center;
+    &__text {
+      color: $grey;
+      font-size: 13px;
+      line-height: 140%; /* 18.2px */
+      margin-right: 13px;
+    }
+    &__list {
+      display: flex;
+      align-items: center;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      &:not(:first-child) {
+        margin-left: 11px;
+      }
+    }
+  }
+}
