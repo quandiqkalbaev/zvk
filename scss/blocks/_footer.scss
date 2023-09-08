@@ -73,7 +73,7 @@
   }
 
   &__about {
-    margin-left: 280px;
+    margin-left: auto;
   }
 
   &__order {
@@ -87,6 +87,11 @@
   .footer__items {
     display: flex;
     flex-direction: column;
+    &-wrapper {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
     &-title {
       color: #feffff;
       font-weight: 700;
@@ -98,7 +103,9 @@
     color: #feffff;
     font-size: 16px;
     line-height: 140%; /* 22.4px */
-    margin-top: 20px;
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
   }
 
   //footer bot styles
@@ -137,6 +144,82 @@
       align-items: center;
       &:not(:first-child) {
         margin-left: 11px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .footer {
+    &__order {
+      margin-left: 35px;
+    }
+    &__client {
+      margin-left: 35px;
+    }
+    &__feedback {
+      max-width: 280px;
+      margin: 0 35px;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .footer {
+    &__about {
+      grid-area: about;
+    }
+    &__feedback {
+      grid-area: feedback;
+    }
+    &__client {
+      grid-area: client;
+    }
+    &__order {
+      grid-area: order-area;
+    }
+    &__logo {
+      grid-area: logo;
+    }
+    &__top-wrapper {
+      display: grid;
+      grid-template-areas: "logo logo feedback" "about order-area client";
+      gap: 30px;
+    }
+    &__about,
+    &__feedback,
+    &__client,
+    &__order,
+    &__logo {
+      margin-left: 0;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer {
+    &__top {
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    &__items {
+      &-title {
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          display: block;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 20px;
+          height: 20px;
+          background-image: url("../../images/tab-menu__arrow.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+      &-wrapper {
+
       }
     }
   }

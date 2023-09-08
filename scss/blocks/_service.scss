@@ -1,6 +1,6 @@
 .service {
   padding-top: 40px;
-  
+
   &__inner {
     display: flex;
     flex-direction: column;
@@ -34,20 +34,15 @@
 
   &__items {
     margin-top: 10px;
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 332px;
   }
-
-  @for $i from 1 to 5 {
-    &__item:nth-child(#{$i}) {
-      background-image: url("../images/service/img-#{$i}.webp");
-    }
+  .slick-slide {
+    display: flex;
   }
 
   &__item {
+    min-height: 332px;
     border-radius: 5px;
+    background-image: url("../images/service/img-1.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -69,69 +64,5 @@
     font-size: 22px;
     font-weight: 700;
     line-height: 24px; /* 109.091% */
-  }
-  //sercive bot styles
-  &__bot {
-    margin-top: 90px;
-    &-items {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 430px;
-      gap: 30px;
-    }
-    &-item {
-      background-image: url("../images/service/img-5.webp");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      border-radius: 5px;
-    }
-    &-item:last-child {
-      background-image: url("../images/service/img-6.webp");
-      p:first-child {
-        max-width: 309px;
-        margin: 150px 29px 0 auto;
-      }
-      p:last-child {
-        width: 270px;
-        height: 42px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        background: #00a7df;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 700;
-        margin: 21px 68px 0 auto;
-      }
-    }
-    &-item:first-child {
-      p:first-child {
-        margin-top: 53px;
-        text-align: center;
-      }
-      p:last-child {
-        width: 270px;
-        height: 42px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 260px auto 0;
-        border-radius: 5px;
-        background: #00a7df;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 700;
-      }
-    }
-    &-btn {
-      display: inline;
-    }
-    &-title {
-      font-size: 32px;
-      font-weight: 700;
-      line-height: 30px; /* 93.75% */
-    }
   }
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="header__top">
         <div class="container">
           <div class="header__top-inner">
@@ -97,10 +97,10 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
 
     <main>
-      <section class="intro">
+      <!-- <section class="intro">
         <div class="container">
           <div class="intro__inner">
             <div class="intro__items">
@@ -137,7 +137,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="service">
         <div class="container">
@@ -200,19 +200,18 @@
                 </a>
               </div>
             </div>
-            <div class="service__bot">
-              <div class="service__bot-items">
-                <a href="#" class="service__bot-item">
-                  <p class="service__bot-title">Собрать компьютер</p>
-                  <p class="service__bot-btn">Создать свою сборку</p>
-                </a>
-                <a href="#" class="service__bot-item">
-                  <p class="service__bot-title">
-                    Заполните форму онлайн-заявки <br />
-                    на подбор сервера
-                  </p>
-                  <p class="service__bot-btn">Подобрать сервер</p>
-                </a>
+            <div class="service__bot banner">
+              <div class="banner__inner">
+                <div class="banner__item">
+                  <div class="banner__item-img">
+                    <img src="./images/service/img-5.jpg" alt="img" />
+                  </div>
+                </div>
+                <div class="banner__item">
+                  <div class="banner__item-img">
+                    <img src="./images/service/img-6.jpg" alt="img" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1118,7 +1117,10 @@
         <div class="container">
           <div class="last__inner">
             <div class="last__title">
-              <h2 class="last__title-name">Недавно просмотренные товары</h2>
+              <h2 class="last__title-name">
+                Недавно <br />
+                просмотренные товары
+              </h2>
               <a class="last__title-showall" href="#"
                 >Смотреть все
                 <span class="last__title-icon">
@@ -1389,26 +1391,28 @@
               </div>
               <div class="footer__items footer__about">
                 <p class="footer__items-title">О компании</p>
-                <a href="#" class="footer__item">Наши клиенты</a>
-                <a href="#" class="footer__item">Отзывы клиентов</a>
-                <a href="#" class="footer__item">Наши партнеры</a>
-                <a href="#" class="footer__item">Вакансии</a>
-                <a href="#" class="footer__item">Новости</a>
+                <div class="footer__items-wrapper">
+                  <a href="#" class="footer__item">Наши клиенты</a>
+                  <a href="#" class="footer__item">Отзывы клиентов</a>
+                  <a href="#" class="footer__item">Наши партнеры</a>
+                  <a href="#" class="footer__item">Вакансии</a>
+                  <a href="#" class="footer__item">Новости</a>
+                </div>
               </div>
               <div class="footer__items footer__order">
                 <p class="footer__items-title">Оплата и доставка</p>
-                <a href="#" class="footer__item">Оплата</a>
-                <a href="#" class="footer__item">Доставка </a>
-                <a href="#" class="footer__item">Гарантийны обязательства</a>
-                <!-- <a href="#" class="footer__item footer__items-title">Скидки и акции</a>
-              <a href="#" class="footer__item footer__items-title">Статьи</a> -->
+                <div class="footer__items-wrapper">
+                  <a href="#" class="footer__item">Оплата</a>
+                  <a href="#" class="footer__item">Доставка </a>
+                  <a href="#" class="footer__item">Гарантийны обязательства</a>
+                </div>
               </div>
               <div class="footer__items footer__client">
                 <p class="footer__items-title">Клиентам</p>
-                <a href="#" class="footer__item">Корпоративным клиентам</a>
-                <a href="#" class="footer__item">Участие в тендерах</a>
-                <!-- <a href="#" class="footer__item footer__items-title">Промо</a>
-              <a href="#" class="footer__item footer__items-title">Контакты</a> -->
+                <div class="footer__items-wrapper">
+                  <a href="#" class="footer__item">Корпоративным клиентам</a>
+                  <a href="#" class="footer__item">Участие в тендерах</a>
+                </div>
               </div>
             </div>
           </div>
@@ -1491,7 +1495,6 @@
         </div>
       </div>
     </footer>
-
     <!-- Jquery min JS -->
     <script src="./libs/jquery.min.js"></script>
 

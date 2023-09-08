@@ -2,7 +2,7 @@
   width: 100%;
   margin-top: 87px;
   padding: 53px 0 68px;
-  background-color: #F7F8F9;
+  background-color: #f7f8f9;
   &__title {
     display: flex;
     flex-direction: row;
@@ -29,9 +29,9 @@
 
   &__items {
     margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // gap: 30px;
   }
 
   &__item {

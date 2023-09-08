@@ -1,6 +1,9 @@
 .last {
   padding-top: 70px;
   background-color: $white;
+  br {
+    display: none;
+  }
   &__inner {
     display: flex;
     flex-direction: column;
@@ -10,6 +13,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
     &-name {
       font-size: 32px;
       font-weight: 700;
@@ -23,6 +27,13 @@
     }
     &-icon {
       margin-left: 8px;
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .last {
+    br {
+      display: block;
     }
   }
 }

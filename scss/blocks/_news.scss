@@ -1,6 +1,5 @@
 .news {
   margin-top: 58px;
-  padding-bottom: 72px;
   &__title {
     display: flex;
     flex-direction: row;
@@ -27,14 +26,12 @@
 
   &__items {
     margin-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 28px;
   }
 
   &__item {
-    height: 290px;
+    height: 260px;
     padding: 32px 22px 22px;
+    margin-bottom: 72px;
     transition: all 0.3s;
     border-radius: 5px;
     background-color: $white;
@@ -78,8 +75,16 @@
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
-      -webkit-line-clamp: 6;
+      -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
     }
   }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      list-style: none;
+      margin: -120px 10px 0;
+    }}
 }
