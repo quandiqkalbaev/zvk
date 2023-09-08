@@ -8,42 +8,48 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="header__top">
         <div class="container">
           <div class="header__top-inner">
             <a class="header__logo" href="#">
               <img class="header__logo-img" src="./images/header/logo.svg" alt="logo" />
             </a>
-            <a href="#" class="header__location">
-              <span class="header__location-logo">
-                <img src="./images/header/location-logo.svg" alt="location-logo" />
-              </span>
+            <a href="#" class="header__location" data-da=".header__menu-top, 768, 0">
+              <img src="./images/header/location-logo.svg" alt="location-logo" />
               <p class="header__location-text">Москва</p>
-              <span class="header__location-arrow">
-                <img src="./images/header/arrow-down.svg" alt="arrow-down" />
-              </span>
+              <img src="./images/header/arrow-down.svg" alt="arrow-down" />
             </a>
-            <nav class="nav">
+            <nav class="nav" data-da=".header__menu, 1300, 2">
               <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Статьи</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Скидки и акции</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Оплата и доставка</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Наши клиенты</a></li>
-                <li class="nav__item"><a href="#" class="nav__link"> Контакты</a></li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">О компании</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Статьи</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Скидки и акции</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Оплата и доставка</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Наши клиенты</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link"> Контакты</a>
+                </li>
               </ul>
             </nav>
-            <a class="header__tel" href="tel:+74954777777">+7 (495) 477-77-77</a>
-            <a class="header__social header__social-wapp" href="">
-              <span><img src="./images/header/wapp-logo.svg" alt="wapp-logo" /></span>
+            <a class="header__tel" href="tel:+74954777777" data-da=".header__menu-bot, 768, 1"> +7 (495) 477-77-77 </a>
+            <a class="header__social header__social-wapp" href="#" data-da=".header__menu-bot, 768, 2">
+              <img src="./images/header/wapp-logo.svg" alt="wapp-logo" />
             </a>
-            <a class="header__social header__social-tg" href="">
-              <span><img src="./images/header/tg-logo.svg" alt="social-tg" /></span>
+            <a class="header__social header__social-tg" href="#" data-da=".header__menu-bot, 768, 3">
+              <img src="./images/header/tg-logo.svg" alt="social-tg" />
             </a>
-            <a class="header__feedback" href="#">
-              <span>Обратный звонок</span>
-            </a>
+            <a class="header__feedback" href="#" data-da=".header__menu, 768, 5">Обратный звонок</a>
             <div class="hamburger">
               <span></span>
             </div>
@@ -70,37 +76,38 @@
                 <img src="./images/header/search-icon.svg" alt="search-icon" />
               </span>
             </div>
-            <div class="header__profile">
-              <span class="header__profile-logo">
+            <div class="header__bot-right">
+              <div class="header__profile" data-da=".header__menu-top, 768, 2">
                 <img class="header__profile-img" src="./images/header/user-icon.svg" alt="#" />
-              </span>
-              <p class="header__profile-text">Войти</p>
-            </div>
-            <div class="header__favorite">
-              <span class="header__favorite-logo">
+                <p class="header__profile-text">Войти</p>
+              </div>
+              <div class="header__favorite" data-da=".header__top-inner, 768, 2">
                 <img class="header__favorite-img" src="./images/header/like-icon.svg" alt="#" />
-              </span>
-              <p class="header__favorite-text">Избранное</p>
-            </div>
-            <div class="header__compare">
-              <span class="header__compare-logo">
+                <p class="header__favorite-text">Избранное</p>
+              </div>
+              <div class="header__compare" data-da=".header__menu-top, 768, 1">
                 <img class="header__compare-img" src="./images/header/chart-icon.svg" alt="#" />
-              </span>
-              <p class="header__compare-text">Сравнение</p>
-            </div>
-            <div class="header__cart">
-              <span class="header__cart-logo">
+                <p class="header__compare-text">Сравнение</p>
+              </div>
+              <div class="header__cart" data-da=".header__top-inner, 768, 3">
                 <img class="header__cart-img" src="./images/header/cart-icon.svg" alt="#" />
-              </span>
-              <p class="header__cart-text">Корзина</p>
+                <p class="header__cart-text">Корзина</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </header> -->
+      <div class="header__menu">
+        <div class="header__menu-top"></div>
+        <button class="header__menu-close">
+          <img src="./images/close-icon.svg" alt="close-menu" />
+        </button>
+        <div class="header__menu-bot"></div>
+      </div>
+    </header>
 
     <main>
-      <!-- <section class="intro">
+      <section class="intro">
         <div class="container">
           <div class="intro__inner">
             <div class="intro__items">
@@ -110,34 +117,35 @@
               <a href="#" class="intro__item intro__item-2">
                 <p class="intro__text">МФУ</p>
               </a>
-              <a href="#" class="intro__item intro__item-3">
+              <a href="#" class="intro__item intro__item-3" data-da=".intro__slider,768,0">
                 <p class="intro__text">Совместимые картриджи <br />ZVK</p>
               </a>
-              <a href="#" class="intro__item intro__item-4">
+              <a href="#" class="intro__item intro__item-4" data-da=".intro__slider,768,1">
                 <p class="intro__text">Мебель</p>
               </a>
-              <a href="#" class="intro__item intro__item-5">
+              <a href="#" class="intro__item intro__item-5" data-da=".intro__slider,768,2">
                 <p class="intro__text">Компьютерное оборудование</p>
               </a>
-              <a href="#" class="intro__item intro__item-6">
+              <a href="#" class="intro__item intro__item-6" data-da=".intro__slider,768,3">
                 <p class="intro__text">Серверное оборудование</p>
               </a>
-              <a href="#" class="intro__item intro__item-7">
+              <a href="#" class="intro__item intro__item-7" data-da=".intro__slider,768,4">
                 <p class="intro__text">Аудио и видеотехника</p>
               </a>
               <a href="#" class="intro__item intro__item-8">
                 <p class="intro__text">Профессиональные дисплеи</p>
               </a>
-              <a href="#" class="intro__item intro__item-9">
+              <a href="#" class="intro__item intro__item-9" data-da=".intro__slider,768,5">
                 <p class="intro__text">Компьютеры</p>
               </a>
-              <a href="#" class="intro__item intro__item-10">
+              <a href="#" class="intro__item intro__item-10" data-da=".intro__slider,768,6">
                 <p class="intro__text">Оргтехника</p>
               </a>
             </div>
+            <div class="intro__slider"></div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <section class="service">
         <div class="container">
@@ -1419,7 +1427,10 @@
           <div class="footer__bot">
             <div class="container">
               <div class="footer__bot-wrapper">
-                <p class="footer__rights">© 2002—2023 Компания ЗВК. Все права защищены.</p>
+                <p class="footer__rights">
+                  © 2002—2023 Компания ЗВК. <br />
+                  Все права защищены.
+                </p>
                 <div class="footer__bot-socials bot-socials">
                   <p class="bot-socials__text">Присоединяйтесь:</p>
                   <div class="bot-socials__list">
@@ -1495,11 +1506,15 @@
         </div>
       </div>
     </footer>
+
+    <div class="overlay"></div>
+
     <!-- Jquery min JS -->
     <script src="./libs/jquery.min.js"></script>
 
     <!-- Slick slider -->
     <script src="./libs/slick-1.8.1/slick/slick.min.js"></script>
-    <script src="./js/main.js"></script>
+
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>

@@ -125,6 +125,9 @@
     color: $grey;
     font-size: 13px;
     line-height: 140%; /* 18.2px */
+    br {
+      display: none;
+    }
   }
   .bot-socials {
     display: flex;
@@ -213,13 +216,30 @@
           transform: translateY(-50%);
           width: 20px;
           height: 20px;
-          background-image: url("../../images/tab-menu__arrow.svg");
+          background-image: url("../images/tab-menu__arrow.svg");
           background-position: center;
           background-repeat: no-repeat;
+          transition: all 0.2s;
+        }
+
+        &--active {
+          &::after {
+            transform: translateY(-50%) rotate(180deg);
+          }
         }
       }
       &-wrapper {
-
+        height: 0;
+        overflow: hidden;
+        transition: all 0.2s;
+      }
+    }
+    &__bot {
+      padding: 28px 0;
+    }
+    &__rights {
+      br {
+        display: block;
       }
     }
   }

@@ -1,3 +1,25 @@
+import { useDynamicAdapt } from "./module/dynamicAdapt.js";
+useDynamicAdapt();
+// Dynamic Adaptive
+
+// Burger Menu
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".header__menu");
+const menuClose = document.querySelector(".header__menu-close");
+const overlay = document.querySelector(".overlay");
+
+hamburger.addEventListener("click", () => {
+  menu.classList.add("header__menu--active");
+  document.body.classList.add("no-scroll");
+  overlay.classList.add("overlay--active");
+});
+
+menuClose.addEventListener("click", () => {
+  menu.classList.remove("header__menu--active");
+  document.body.classList.remove("no-scroll");
+  overlay.classList.remove("overlay--active");
+});
+
 //products slider
 
 $(".product").slick({
@@ -217,9 +239,32 @@ $(".service__items").slick({
 //tab-menu footer
 const title = document.querySelectorAll(".footer__items-title");
 
-title.forEach((item) => {
-  item.addEventListener("click", () => {
-    item.nextElementSibling.style.height = item.nextElementSibling.scrollHeight + "px";
+title.forEach((elem) => {
+  const list = elem.parentNode.lastElementChild;
+
+  elem.addEventListener("click", () => {
+    elem.classList.toggle("footer__items-title--active");
+
+    // При клике изменяем max-height в зависимости от состояния
+    if (elem.classList.contains("footer__items-title--active")) {
+      list.style.height = list.scrollHeight + "px";
+    } else {
+      list.style.height = "0";
+    }
   });
 });
 
+$(".intro__slider").slick({
+  mobileFirst: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true,
+  rows: 1,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: "unslick",
+    },
+  ],
+});
