@@ -42,7 +42,7 @@
 
   @for $i from 1 to 5 {
     &__item:nth-child(#{$i}) {
-      background-image: url("../../images/service/img-#{$i}.webp");
+      background-image: url("../images/service/img-#{$i}.webp");
     }
   }
 
@@ -80,14 +80,14 @@
       gap: 30px;
     }
     &-item {
-      background-image: url("../../images/service/img-5.webp");
+      background-image: url("../images/service/img-5.webp");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       border-radius: 5px;
     }
     &-item:last-child {
-      background-image: url("../../images/service/img-6.webp");
+      background-image: url("../images/service/img-6.webp");
       p:first-child {
         max-width: 309px;
         margin: 150px 29px 0 auto;

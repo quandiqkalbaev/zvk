@@ -9,7 +9,7 @@
   @for $i from 1 to 11 {
     &__item-#{$i} {
       grid-area: n#{$i};
-      background: url("../../images/intro/img-#{$i}.png"), #fff;
+      background: url("../images/intro/img-#{$i}.png"), #fff;
       background-repeat: no-repeat;
     }
   }

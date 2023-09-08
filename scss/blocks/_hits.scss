@@ -151,7 +151,7 @@
     background-position: center;
   }
   .slick-next {
-    background-image: url("../../images/product/arrow-right.svg");
+    background-image: url("../images/product/arrow-right.svg");
     right: -123px;
 
     @media (max-width: 1670px) {
@@ -159,7 +159,7 @@
     }
   }
   .slick-prev {
-    background-image: url("../../images/product/arrow-left.svg");
+    background-image: url("../images/product/arrow-left.svg");
     left: -123px;
     @media (max-width: 1670px) {
       left: -26.5px;
