@@ -162,7 +162,7 @@
 }
 /* the slides */
 .slick-slide {
-  margin:0 15px;
+  margin: 0 15px;
 }
 
 /* the parent */
@@ -177,7 +177,8 @@
   .last,
   .sale,
   .news,
-  .article {
+  .article,
+  .service {
     &__title-name {
       font-size: 22px;
     }
@@ -211,9 +212,12 @@
   .last,
   .sale,
   .news,
-  .article {
-    &__title-name {
-      font-size: 16px;
+  .article,
+  .service {
+    &__title {
+      &-name {
+        font-size: 16px;
+      }
     }
     &__title-showall {
       font-size: 12px;

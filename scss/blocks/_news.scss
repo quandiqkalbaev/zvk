@@ -31,7 +31,7 @@
   &__item {
     height: 260px;
     padding: 32px 22px 22px;
-    margin-bottom: 72px;
+    margin-bottom: 72px !important;
     transition: all 0.3s;
     border-radius: 5px;
     background-color: $white;
@@ -86,5 +86,6 @@
     li {
       list-style: none;
       margin: -120px 10px 0;
-    }}
+    }
+  }
 }
