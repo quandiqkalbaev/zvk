@@ -1083,14 +1083,21 @@ body {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
+.news .slick-track {
+  position: relative;
+}
 .news .slick-dots {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .news .slick-dots li {
   list-style: none;
-  margin: -120px 10px 0;
+  margin-bottom: 70px !important;
 }
 
 .sale {
@@ -1523,9 +1530,11 @@ body {
   height: 15px;
   background-color: #999;
   border-radius: 50%;
+  transition: all 200ms linear;
 }
 .slick-slider .slick-dots .slick-active button {
   background-color: #ff8b34;
+  transform: scale(1.3);
 }
 
 /* the slides */

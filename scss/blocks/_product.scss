@@ -152,10 +152,12 @@
       height: 15px;
       background-color: $grey;
       border-radius: 50%;
+      transition: all 200ms linear;
     }
     .slick-active {
       button {
         background-color: $primary;
+        transform: scale(1.3);
       }
     }
   }
