@@ -211,7 +211,9 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .header__top-inner .header__tel, .header__top-inner .header__social, .header__top-inner .header__feedback, .header__top-inner .header__location {
+  .header__top-inner .header__tel,
+  .header__top-inner .header__social,
+  .header__top-inner .header__feedback {
     display: none;
   }
 }
@@ -518,7 +520,7 @@ body {
     margin: 15px 0 0;
   }
   .header .hamburger {
-    margin-left: 20px;
+    margin-left: 10px;
   }
   .header__menu {
     width: 100%;
@@ -544,14 +546,21 @@ body {
     max-width: 100%;
     margin: 0 0 0 12px;
   }
-  .header__compare, .header__profile {
+  .header__compare {
+    margin-left: 0;
+  }
+  .header__profile {
     margin-left: 20px;
   }
   .header__favorite {
     margin-left: auto;
   }
   .header__cart {
-    margin-left: 20px;
+    margin-left: 10px;
+  }
+  .header__location {
+    margin-right: auto;
+    margin-left: 10px;
   }
 }
 .intro {

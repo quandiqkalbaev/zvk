@@ -19,7 +19,9 @@
         }
       }
 
-      .header__tel,.header__social,.header__feedback,.header__location{
+      .header__tel,
+      .header__social,
+      .header__feedback {
         @media (max-width: 768px) {
           display: none;
         }
@@ -399,7 +401,7 @@
     }
 
     .hamburger {
-      margin-left: 20px;
+      margin-left: 10px;
     }
 
     &__menu {
@@ -432,17 +434,26 @@
       margin: 0 0 0 12px;
     }
 
-    &__compare,
+    &__compare{
+      margin-left: 0;
+    }
+    
+
     &__profile {
       margin-left: 20px;
     }
+
 
     &__favorite {
       margin-left: auto;
     }
 
     &__cart {
-      margin-left: 20px;
+      margin-left: 10px;
+    }
+    &__location{
+      margin-right: auto;
+      margin-left: 10px;
     }
   }
 }
