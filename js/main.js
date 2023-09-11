@@ -1,5 +1,5 @@
-import { useDynamicAdapt } from "./module/dynamicAdapt.js";
-useDynamicAdapt();
+// import { useDynamicAdapt } from "./module/dynamicAdapt.js";
+// useDynamicAdapt();
 // Dynamic Adaptive
 
 // Burger Menu

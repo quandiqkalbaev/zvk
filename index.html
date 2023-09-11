@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -15,12 +15,12 @@
             <a class="header__logo" href="#">
               <img class="header__logo-img" src="./images/header/logo.svg" alt="logo" />
             </a>
-            <a href="#" class="header__location" data-da=".header__menu-top, 768, 0">
+            <a href="#" class="header__location">
               <img src="./images/header/location-logo.svg" alt="location-logo" />
               <p class="header__location-text">Москва</p>
               <img src="./images/header/arrow-down.svg" alt="arrow-down" />
             </a>
-            <nav class="nav" data-da=".header__menu, 1300, 2">
+            <nav class="nav">
               <ul class="nav__list">
                 <li class="nav__item">
                   <a href="#" class="nav__link">О компании</a>
@@ -42,14 +42,20 @@
                 </li>
               </ul>
             </nav>
-            <a class="header__tel" href="tel:+74954777777" data-da=".header__menu-bot, 768, 1"> +7 (495) 477-77-77 </a>
-            <a class="header__social header__social-wapp" href="#" data-da=".header__menu-bot, 768, 2">
+            <a class="header__tel" href="tel:+74954777777"> +7 (495) 477-77-77 </a>
+            <a class="header__social header__social-wapp" href="#">
               <img src="./images/header/wapp-logo.svg" alt="wapp-logo" />
             </a>
-            <a class="header__social header__social-tg" href="#" data-da=".header__menu-bot, 768, 3">
+            <a class="header__social header__social-tg" href="#">
               <img src="./images/header/tg-logo.svg" alt="social-tg" />
             </a>
-            <a class="header__feedback" href="#" data-da=".header__menu, 768, 5">Обратный звонок</a>
+            <a class="header__feedback" href="#">Обратный звонок</a>
+            <div class="header__favorite">
+              <img class="header__favorite-img" src="./images/header/like-icon.svg" alt="#" />
+            </div>
+            <div class="header__cart">
+              <img class="header__cart-img" src="./images/header/cart-icon.svg" alt="#" />
+            </div>
             <div class="hamburger">
               <span></span>
             </div>
@@ -77,19 +83,19 @@
               </span>
             </div>
             <div class="header__bot-right">
-              <div class="header__profile" data-da=".header__menu-top, 768, 2">
+              <div class="header__profile">
                 <img class="header__profile-img" src="./images/header/user-icon.svg" alt="#" />
                 <p class="header__profile-text">Войти</p>
               </div>
-              <div class="header__favorite" data-da=".header__top-inner, 768, 2">
+              <div class="header__favorite">
                 <img class="header__favorite-img" src="./images/header/like-icon.svg" alt="#" />
                 <p class="header__favorite-text">Избранное</p>
               </div>
-              <div class="header__compare" data-da=".header__menu-top, 768, 1">
+              <div class="header__compare">
                 <img class="header__compare-img" src="./images/header/chart-icon.svg" alt="#" />
                 <p class="header__compare-text">Сравнение</p>
               </div>
-              <div class="header__cart" data-da=".header__top-inner, 768, 3">
+              <div class="header__cart">
                 <img class="header__cart-img" src="./images/header/cart-icon.svg" alt="#" />
                 <p class="header__cart-text">Корзина</p>
               </div>
@@ -98,11 +104,57 @@
         </div>
       </div>
       <div class="header__menu">
-        <div class="header__menu-top"></div>
+        <div class="header__menu-top">
+          <a href="#" class="header__location">
+            <img src="./images/header/location-logo.svg" alt="location-logo" />
+            <p class="header__location-text">Москва</p>
+            <img src="./images/header/arrow-down.svg" alt="arrow-down" />
+          </a>
+          <div class="header__compare">
+            <img class="header__compare-img" src="./images/header/chart-icon.svg" alt="#" />
+            <p class="header__compare-text">Сравнение</p>
+          </div>
+          <div class="header__profile">
+            <img class="header__profile-img" src="./images/header/user-icon.svg" alt="#" />
+            <p class="header__profile-text">Войти</p>
+          </div>
+        </div>
         <button class="header__menu-close">
           <img src="./images/close-icon.svg" alt="close-menu" />
         </button>
-        <div class="header__menu-bot"></div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">О компании</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Статьи</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Скидки и акции</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Оплата и доставка</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Наши клиенты</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"> Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__menu-bot">
+          <a class="header__tel" href="tel:+74954777777"> +7 (495) 477-77-77 </a>
+          <a class="header__social header__social-wapp" href="#">
+            <img src="./images/header/wapp-logo.svg" alt="wapp-logo" />
+          </a>
+          <a class="header__social header__social-tg" href="#">
+            <img src="./images/header/tg-logo.svg" alt="social-tg" />
+          </a>
+        </div>
+        <a class="header__feedback" href="#">Обратный звонок</a>
+
       </div>
     </header>
 
@@ -117,32 +169,31 @@
               <a href="#" class="intro__item intro__item-2">
                 <p class="intro__text">МФУ</p>
               </a>
-              <a href="#" class="intro__item intro__item-3" data-da=".intro__slider,768,0">
+              <a href="#" class="intro__item intro__item-3">
                 <p class="intro__text">Совместимые картриджи <br />ZVK</p>
               </a>
-              <a href="#" class="intro__item intro__item-4" data-da=".intro__slider,768,1">
+              <a href="#" class="intro__item intro__item-4">
                 <p class="intro__text">Мебель</p>
               </a>
-              <a href="#" class="intro__item intro__item-5" data-da=".intro__slider,768,2">
+              <a href="#" class="intro__item intro__item-5">
                 <p class="intro__text">Компьютерное оборудование</p>
               </a>
-              <a href="#" class="intro__item intro__item-6" data-da=".intro__slider,768,3">
+              <a href="#" class="intro__item intro__item-6">
                 <p class="intro__text">Серверное оборудование</p>
               </a>
-              <a href="#" class="intro__item intro__item-7" data-da=".intro__slider,768,4">
+              <a href="#" class="intro__item intro__item-7">
                 <p class="intro__text">Аудио и видеотехника</p>
               </a>
               <a href="#" class="intro__item intro__item-8">
                 <p class="intro__text">Профессиональные дисплеи</p>
               </a>
-              <a href="#" class="intro__item intro__item-9" data-da=".intro__slider,768,5">
+              <a href="#" class="intro__item intro__item-9">
                 <p class="intro__text">Компьютеры</p>
               </a>
-              <a href="#" class="intro__item intro__item-10" data-da=".intro__slider,768,6">
+              <a href="#" class="intro__item intro__item-10">
                 <p class="intro__text">Оргтехника</p>
               </a>
             </div>
-            <div class="intro__slider"></div>
           </div>
         </div>
       </section>
@@ -1510,13 +1561,10 @@
     <div class="overlay"></div>
 
     <!-- Jquery min JS -->
-    <!-- <script src="./libs/jquery.min.js"></script>
-     -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./libs/jquery.min.js"></script>
 
     <!-- Slick slider -->
-    <!-- <script src="./libs/slick-1.8.1/slick/slick.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="module" src="./js/main.js"></script>
+    <script src="./libs/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
