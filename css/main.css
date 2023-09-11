@@ -1280,6 +1280,11 @@ body {
   display: flex;
   align-items: center;
 }
+@media (max-width: 400px) {
+  .footer .bot-socials {
+    flex-direction: column;
+  }
+}
 .footer .bot-socials__text {
   color: #999;
   font-size: 13px;

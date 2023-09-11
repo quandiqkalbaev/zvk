@@ -68,7 +68,6 @@ $(".product").slick({
     // instead of a settings object
   ],
 });
-
 //sales slider
 $(".sale__items").slick({
   slidesToShow: 4,
@@ -197,42 +196,35 @@ $(".article__items").slick({
 
 //service slider
 $(".service__items").slick({
-  slidesToShow: 4,
+  mobileFirst: true,
+  slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  dots: false,
-  rows: 1,
+  dots: true,
   responsive: [
     {
-      breakpoint: 1300,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        arrows: false,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 960,
+      breakpoint: 641,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-        arrows: false,
-        dots: true,
       },
     },
     {
-      breakpoint: 640,
+      breakpoint: 961,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
       },
     },
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
+    {
+      breakpoint: 1301,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: false,
+        dots: false,
+      },
+    },
   ],
 });
 

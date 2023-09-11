@@ -132,6 +132,9 @@
   .bot-socials {
     display: flex;
     align-items: center;
+    @media (max-width: 400px) {
+      flex-direction: column;
+    }
     &__text {
       color: $grey;
       font-size: 13px;
